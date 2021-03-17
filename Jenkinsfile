@@ -51,6 +51,6 @@ pipeline {
 
   }
   environment {
-    ChromeDriverPath = 'C:\\Driver\\Path\\ChromeDriver.exe'
+    ChromeDriverPath = 'C:\\Driver\\Web\\ChromeDriver.exe'
   }
 }
