@@ -43,6 +43,7 @@ pipeline {
         stage('Artifacts') {
           steps {
             archiveArtifacts(artifacts: 'LogTestFile.txt', fingerprint: true, onlyIfSuccessful: true)
+            archiveArtifacts(artifacts: 'pipeline.log', fingerprint: true)
           }
         }
 
