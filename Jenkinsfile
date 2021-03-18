@@ -35,7 +35,7 @@ pipeline {
       parallel {
         stage('Deploy') {
           steps {
-            input(message: 'Do you want to Deployment ?', id: 'OK')
+            input(message: 'Do you want to Perform Deployment ?', id: 'OK')
             echo 'Deploying the app in IIS server'
           }
         }
