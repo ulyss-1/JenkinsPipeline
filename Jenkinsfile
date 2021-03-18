@@ -49,7 +49,7 @@ pipeline {
 
         stage('Test log') {
           steps {
-            writeFile(file: 'LogTestFile.txt', text: 'This is automation file log', encoding: 'UTF-8')
+            writeFile(file: 'LogTestFile.txt', text: 'This is automation file log ${ChromeDriverPath}', encoding: 'UTF-8')
           }
         }
 
